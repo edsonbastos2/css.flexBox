@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex Box</title>
+    <style>
+        .container{
+            background-color: #ccc;
+            height: 600px;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            /* align-items: flex-start; */
+            align-content: flex-start;
+        }
+        .item{
+            background-color: tomato;
+            padding: 20px;
+            margin: 5px;
+            color: #393939;
+            font-size: 40px;
+            height: 30px;
+            flex: 1 1 300px;
+        }
+        .article-01{ flex-shrink: 3;}
+        .article-02{}
+        .article-03{}
+        .article-04{}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item article-01">01</div>
+        <div class="item article-02">02</div>
+        <div class="item article-03">03</div>
+        <div class="item article-04">04</div>
+    </div>
+</body>
+</html>
